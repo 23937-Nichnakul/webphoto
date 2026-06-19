@@ -20,7 +20,7 @@
 
         /* ส่วนหัวข้อ (Hero Section) */
         header {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://image-tc.galaxy.tf/wijpeg-sxrfid5inslt46adwg0pwpho/intanon.jpg') no-repeat center center/cover;
             height: 40vh;
             display: flex;
             flex-direction: column;
@@ -116,10 +116,11 @@
         }
 
         .modal-content {
-            max-width: 80%;
-            max-height: 80vh;
+            max-width: 85%;
+            max-height: 85vh;
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(255,255,255,0.2);
+            object-fit: contain;
         }
 
         .close-btn {
@@ -145,34 +146,32 @@
     <div class="gallery-container">
         <div class="gallery-grid">
             
-            <!-- การ์ดที่ 1 (ตัวอย่างรูปจากอินเทอร์เน็ต สามารถเปลี่ยนเองได้) -->
-            <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=800&q=80')">
-                <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=800&q=80" alt="วัดอรุณ">
-                <div class="gallery-info">
-                    <h3>วัดอรุณราชวราราม</h3>
-                    <p>กรุงเทพมหานคร</p>
-                </div>
-            </div>
-
-            <!-- การ์ดที่ 2 -->
-            <div class="gallery-item" onclick="openModal('https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80')">
-                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" alt="ทะเลภาคใต้">
-                <div class="gallery-info">
-                    <h3>เกาะพีพี</h3>
-                    <p>จังหวัดกระบี่</p>
-                </div>
-            </div>
-
-            <!-- การ์ดที่ 3 -->
-            <div class="gallery-item" onclick="openModal('https://image-tc.galaxy.tf/wijpeg-sxrfid5inslt46adwg0pwpho/intanon.jpg=format&fit=crop&w=800&q=80')">
-                <img src="https://image-tc.galaxy.tf/wijpeg-sxrfid5inslt46adwg0pwpho/intanon.jpg=format&fit=crop&w=800&q=80" alt="เชียงใหม่">
+            <!-- การ์ดที่ 1: ดอยอินทนนท์ -->
+            <div class="gallery-item" onclick="openModal('https://image-tc.galaxy.tf/wijpeg-sxrfid5inslt46adwg0pwpho/intanon.jpg')">
+                <img src="https://image-tc.galaxy.tf/wijpeg-sxrfid5inslt46adwg0pwpho/intanon.jpg" alt="ดอยอินทนนท์">
                 <div class="gallery-info">
                     <h3>ดอยอินทนนท์</h3>
                     <p>จังหวัดเชียงใหม่</p>
                 </div>
             </div>
 
-            <!-- คุณสามารถเพิ่มการ์ดตรงนี้ได้เรื่อยๆ โดยก๊อปปี้โครงสร้างด้านบนไปวางต่อซ้ำๆ ได้เลยครับ -->
+            <!-- การ์ดที่ 2: เกาะพีพี -->
+            <div class="gallery-item" onclick="openModal('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxtaoliSS3QU_6hGSB43LETUy9D_74tUZ-0Q&s')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxtaoliSS3QU_6hGSB43LETUy9D_74tUZ-0Q&s" alt="เกาะพีพี">
+                <div class="gallery-info">
+                    <h3>เกาะพีพี</h3>
+                    <p>จังหวัดกระบี่</p>
+                </div>
+            </div>
+
+            <!-- การ์ดที่ 3: วัดอรุณ -->
+            <div class="gallery-item" onclick="openModal('https://img.kapook.com/u/2023/sireeporn/Travel-04/wat-arun01.jpg')">
+                <img src="https://img.kapook.com/u/2023/sireeporn/Travel-04/wat-arun01.jpg" alt="วัดอรุณ">
+                <div class="gallery-info">
+                    <h3>วัดอรุณราชวราราม</h3>
+                    <p>กรุงเทพมหานคร</p>
+                </div>
+            </div>
 
         </div>
     </div>
